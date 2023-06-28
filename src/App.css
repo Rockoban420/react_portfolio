@@ -1,5 +1,9 @@
+
 .App {
   text-align: center;
+  background-color: #09008c;
+  background-image: url("https://transparenttextures.com/patterns/3px-tile.png");
+  background-repeat: repeat;
 }
 
 .App-logo {
@@ -26,6 +30,7 @@
 
 .App-link {
   color: #61dafb;
+  /* color: #820f9f; */
 }
 
 @keyframes App-logo-spin {

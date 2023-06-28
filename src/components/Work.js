@@ -9,7 +9,7 @@ import { Images } from './subcomps/Images';
 
 export const Work = () => {
     return (
-        <div>
+        <div id='Work'>
             <Grid 
                 container spacing={2}
                 marginTop={8}
@@ -30,14 +30,17 @@ export const Work = () => {
                     {
                         width: '2px',
                         backgroundColor: 'black',
+                        marginRight: '60px',
+                        backgroundColor: 'rgb(210, 240, 248)',
                     }
                 }
             >
             </Divider>
             <Grid
-                xs={9}
+                xs={8}
             >
-                <Images />
+                <Images 
+                />
             </Grid>
             </Grid>
         </div>

@@ -8,7 +8,7 @@ import {
 
 export const AboutMe = () => {
     return (
-        <div>
+        <div id='AboutMe'>
             <Grid 
                 container spacing={2}
                 marginTop={8}
@@ -28,7 +28,7 @@ export const AboutMe = () => {
                 style={
                     {
                         width: '2px',
-                        backgroundColor: 'black',
+                        backgroundColor: 'rgb(210, 240, 248)',
                     }
                 }
             >

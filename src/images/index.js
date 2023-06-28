@@ -1,2 +1,9 @@
 export const Project1 = require('./project1_ss.png');
 export const Project2 = require('./project2_ss.png');
+export const QuizGame = require('./qg_ss.png');
+export const WeatherApp = require('./weatherss.png');
+export const ExpertGuides = require('./expertguides_ss.png');
+export const ZephyrCove = require('./zephyrcove_ss.png');
+export const Banner1 = require('./banner1.png');
+export const Banner2 = require('./banner2.png');
+export const Banner3 = require('./banner3.png');
