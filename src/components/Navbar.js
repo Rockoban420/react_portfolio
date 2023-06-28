@@ -10,7 +10,6 @@ import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
 
 const pages = ['About Me', 'Work', 'Contact', 'Resume'];
 
@@ -112,8 +111,6 @@ export const Navbar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                component={Link}
-                to={`/#${page}`}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
