@@ -1,0 +1,15 @@
+export const Project1 = require('./project1_ss.png');
+export const Project2 = require('./project2_ss.png');
+export const QuizGame = require('./qg_ss.png');
+export const WeatherApp = require('./weatherss.png');
+export const ExpertGuides = require('./expertguides_ss.png');
+export const ZephyrCove = require('./zephyrcove_ss.png');
+export const Banner3 = require('./banner3.png');
+export const me = require('./me.jpg');
+export const me2 = require('./me2.jpg');
+export const logo = require('./logo.png');
+export const cv = require('./cv.pdf');
+export const linkedin = require('./linkedin.png');
+export const github = require('./github.png');
+export const linkedinLight = require('./linkedinLight.png');
+export const githubLight = require('./githubLight.png');
