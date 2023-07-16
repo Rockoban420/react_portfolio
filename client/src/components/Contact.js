@@ -95,7 +95,7 @@ export const Contact = () => {
                 marginTop={8}
             >
                 <Grid
-                    xs={2.6}
+                    xs={12}
                 >
                     <Typography
                         variant='h2'
@@ -103,19 +103,10 @@ export const Contact = () => {
                         Contact
                     </Typography>
                 </Grid>
-                <Divider
-                    orientation="vertical"
-                    flexItem
-                    style={
-                        {
-                            width: '2px',
-                            backgroundColor: 'rgb(210, 240, 248)',
-                        }
-                    }
-                >
-                </Divider>
+                
                 <Grid
-                    xs={9}
+                    xs={12}
+
                 >
                     <form
                         onSubmit={(e) => {
@@ -126,7 +117,10 @@ export const Contact = () => {
                         <Typography
                             style={{
                                 display: 'flex',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
                                 flexDirection: 'column',
+                                alignContent: 'center',
                                 justifyContent: 'space-around',
                                 alignItems: 'left',
                                 width: '50%',
@@ -192,12 +186,13 @@ export const Contact = () => {
                             <button
                                 type='submit'
                                 style={{
-                                    backgroundColor: '#061985',
+                                    backgroundColor: '#3A95B6',
                                     color: '#fff',
                                     borderRadius: '10px',
                                     padding: '10px',
                                     width: '100px',
                                     marginTop: '20px',
+                                    alignItems: 'center',
                                 }}
                             >
                                 Submit

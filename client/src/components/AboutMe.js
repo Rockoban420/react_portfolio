@@ -5,6 +5,8 @@ import {
     Divider,
     Avatar,
     Stack,
+    List,
+    Box,
 } from '@mui/material';
 
 import {
@@ -25,33 +27,26 @@ export const AboutMe = () => {
             .addEventListener('change', e => setMatches(e.matches));
     }, []);
     return (
-        <div id='AboutMe' style={{ height: 800 }}>
+        <div id='AboutMe' style={{ height: 'auto' }}>
+            <List>
             <Grid
                 container spacing={2}
-                marginTop={8}
+                marginTop={4}
             >
                 <Grid
-                    xs={2.6}
+                    xs={12}
                 >
                     <Typography
                         variant='h2'
+                        style={{marginBottom: '20px', color: '#ECF5F9'}}
                     >
                         About Me
                     </Typography>
                 </Grid>
-                <Divider
-                    orientation="vertical"
-                    flexItem
-                    style={
-                        {
-                            width: '2px',
-                            backgroundColor: 'rgb(210, 240, 248)',
-                        }
-                    }
-                >
-                </Divider>
+                <br />
+                <br />
                 <Grid
-                    xs={9}
+                    xs={12}
                 >
                     {
                         matches ?
@@ -87,18 +82,29 @@ export const AboutMe = () => {
                     }
                     <br />
                     <br />
+                    <Box
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                        }}
+                    >
                     <Typography
                         variant='body1'
                         marginLeft={2}
+                        style={{color: '#ECF5F9'}}
                     >
-                        Fully Bilingual front-end software engineer born and raised in Buenos Aires, Argentina leveraging background in Technical School. Earned a certificate in Full Stack Web Development from the University of Berkley, Coding Boot Camp.
-                        <br /><br />Very passionate in coding with a focus on design and development. Strengths in creativity, teamwork, and building projects from ideation to execution. With a very handy base of Bilingual Technical high school in the Philips School (ITPA) in Argentina which trains engineers.
+                        Fully Bilingual front-end software engineer born and raised in Buenos Aires, Argentina leveraging background in Technical School. 
+                        <br /><br />Earned a certificate in Full Stack Web Development from the University of Berkley, Coding Boot Camp.
+                        <br /><br />Very passionate in coding with a focus on design and development. Strengths in creativity, teamwork, and building projects from ideation to execution. 
+                        <br /><br />With a very handy base of Bilingual Technical high school in the Philips School (ITPA) in Argentina which trains engineers.
                         <br /><br />Hobbies include skateboarding, snowboarding, working out, hiking and playing games with my buddies.
                         <br /><br />I am currently looking to transition from my current job into tech! I am open to any opportunities and would love to connect with you! I am located in the Bay Area, California.
                         <br /><br />Some of my career interests are QA, Front-End, Back-End, Full-Stack, and Software Engineering, As well as game design, testing and development.
                     </Typography>
+                    </Box>
                 </Grid>
             </Grid>
+            </List>
         </div>
     )
 }

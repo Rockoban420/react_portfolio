@@ -10,49 +10,70 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useMediaQuery, Grid } from '@mui/material';
 import {
-    Project1,
-    Project2,
-    QuizGame,
-    WeatherApp,
-    ExpertGuides,
-    ZephyrCove,
+  Project1,
+  Project2,
+  QuizGame,
+  WeatherApp,
+  ExpertGuides,
+  ZephyrCove,
 } from '../../images'
 
 export const Images = () => {
+  const isMobile = useMediaQuery('(min-width:600px)');
+  let isTablet = useMediaQuery('(min-width:1200px)');
+
+  console.log('mobile', isMobile, 'tablet', isTablet);
+
   return (
-    <ImageList sx={8}>
-      {itemData.map((item) => (
-        <Card sx={{ maxWidth: 600 }}>
-        <CardMedia
-          sx={{ height: 300 }}
-          image={item.img}
-          title={item.title}
-        />
-        <CardContent 
-        style={{ backgroundColor: 'rgb(210, 240, 248)' }}
-        >
-          <Typography gutterBottom variant="h5" component="div">
-            {item.title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {item.author}
-          </Typography>
-        </CardContent>
-        <CardActions
-        style={{ backgroundColor: 'rgb(210, 240, 248)' }}
-        >
-          <Button 
-          size="small"
-          onClick={() => window.open(item.href, "_blank")}
-          >Deployed App</Button>
-          {item.ghref ?
-          <Button size="small" onClick={() => window.open(item.ghref)}>Github Repo</Button>
-          : null}
-        </CardActions>
-      </Card>
-      ))}
-    </ImageList>
+    <Grid
+      marginLeft={!isTablet ? 5 : isMobile ? 25 : 0}
+      marginRight={!isTablet ? 5 : isMobile ? 25 : 0}
+    >
+      <ImageList
+        cols={isMobile ? 2 : 1}
+        gap={20}
+        width={isMobile ? 800 : 300}
+      >
+        {itemData.map((item) => (
+          <Card sx={{ width: 'auto', height: 'auto' }} style={{borderStyle: 'solid', borderWidth: '3px', borderColor:'#2D4DCD'}}>
+            <CardMedia
+              sx={{ height: '250px' }}
+              image={item.img}
+              title={item.title}
+              height={'auto'}
+            />
+            <CardContent
+              style={{ backgroundColor: '#102932' }}
+            >
+              <Typography style={{ color: '#ECF5F9' }} gutterBottom variant="h5" component="div">
+                {item.title}
+              </Typography>
+              <Typography variant="body2" color="#ECF5F9">
+                {item.author}
+              </Typography>
+            </CardContent>
+            <CardActions
+              style={{ backgroundColor: '#102932' }}
+            >
+              <Button
+                size="small"
+                onClick={() => window.open(item.href, "_blank")}
+                style={{ color: '#ECF5F9' }}
+              >Deployed App</Button>
+              {item.ghref ?
+                <Button
+                  size="small"
+                  onClick={() => window.open(item.ghref)}
+                  style={{ color: '#ECF5F9' }}
+                >Github Repo</Button>
+                : null}
+            </CardActions>
+          </Card>
+        ))}
+      </ImageList>
+    </Grid>
   );
 }
 
@@ -97,6 +118,6 @@ const itemData = [
     title: 'Weather App',
     author: 'HTML/ CSS/ JS/ APIs',
   },
-  
+
 
 ];

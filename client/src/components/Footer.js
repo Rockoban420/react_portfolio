@@ -23,7 +23,7 @@ export const Footer = () => {
     return (
         <BottomNavigation
             style={{
-                backgroundColor: '#061985',
+                backgroundColor: '#3A95B6',
                 height: '100px',
                 display: 'flex',
                 justifyContent: 'center',

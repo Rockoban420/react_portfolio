@@ -11,33 +11,21 @@ export const Work = () => {
     return (
         <div id='Work'>
             <Grid 
-                container spacing={2}
+                container spacing={1}
                 marginTop={8}
             >
             <Grid
-                xs={2.6}   
+                xs={12}   
             >
                 <Typography
                     variant='h2'
+                    style={{color: '#ECF5F9'}}
                 >
                     Work
                 </Typography>
             </Grid>
-            <Divider 
-                orientation="vertical" 
-                flexItem
-                style={
-                    {
-                        width: '2px',
-                        backgroundColor: 'black',
-                        marginRight: '60px',
-                        backgroundColor: 'rgb(210, 240, 248)',
-                    }
-                }
-            >
-            </Divider>
             <Grid
-                xs={8}
+                display='flex'
             >
                 <Images 
                 />
