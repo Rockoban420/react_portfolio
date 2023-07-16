@@ -27,7 +27,7 @@ export const AboutMe = () => {
             .addEventListener('change', e => setMatches(e.matches));
     }, []);
     return (
-        <div id='AboutMe' style={{ height: 'auto' }}>
+        <div id='AboutMe' style={{ height: '85vh' }}>
             <List>
             <Grid
                 container spacing={2}

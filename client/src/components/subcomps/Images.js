@@ -22,14 +22,14 @@ import {
 
 export const Images = () => {
   const isMobile = useMediaQuery('(min-width:600px)');
-  let isTablet = useMediaQuery('(min-width:1200px)');
+  let isTablet = useMediaQuery('(min-width:1450px)');
 
   console.log('mobile', isMobile, 'tablet', isTablet);
 
   return (
     <Grid
-      marginLeft={!isTablet ? 5 : isMobile ? 25 : 0}
-      marginRight={!isTablet ? 5 : isMobile ? 25 : 0}
+      marginLeft={!isTablet ? 10 : isMobile ? 50 : 0}
+      marginRight={!isTablet ? 10 : isMobile ? 50 : 0}
     >
       <ImageList
         cols={isMobile ? 2 : 1}
