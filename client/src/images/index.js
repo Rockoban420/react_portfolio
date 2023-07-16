@@ -14,3 +14,4 @@ export const github = require('./github.png');
 export const linkedinLight = require('./linkedinLight.png');
 export const githubLight = require('./githubLight.png');
 export const menuIcon = require('./menuIcon.png');
+export const blackMamba = require('./blackMamba.png');

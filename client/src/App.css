@@ -41,6 +41,10 @@
   background-image: url("https://transparenttextures.com/patterns/black-mamba.png");
 }
 
+.MuiPaper-elevation {
+  background-image: url("https://transparenttextures.com/patterns/black-mamba.png");
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

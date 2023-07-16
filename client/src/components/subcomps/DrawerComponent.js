@@ -17,6 +17,7 @@ import {
 import {
     cv,
     menuIcon,
+    blackMamba,
 } from '../../images'
 
 export const DrawerComponent = (props) => {
@@ -38,13 +39,15 @@ export const DrawerComponent = (props) => {
                 anchor={"left"}
             >
                 <List
-                    style={{ backgroundColor: '#061985', height: '100vh' }}    
+                    style={{ backgroundColor: '#3A95B6', backgroundImage: {blackMamba}, height: '100vh' }}    
                 >
                     <ListItem onClick={() => {
                         props.setCurrentTab('AboutMe');
                         setOpenDrawer(false)
                         }}>
-                        <ListItemText>
+                        <ListItemText
+                            style={{ color: '#ECF5F9' }}
+                        >
                             About Me
                         </ListItemText>
                     </ListItem>
@@ -53,6 +56,7 @@ export const DrawerComponent = (props) => {
                         setOpenDrawer(false)
                         }}>
                         <ListItemText
+                        style={{ color: '#ECF5F9' }}
                         >
                             Work
                         </ListItemText>
@@ -61,7 +65,9 @@ export const DrawerComponent = (props) => {
                         props.setCurrentTab('Contact');
                         setOpenDrawer(false)
                     }}>
-                        <ListItemText>
+                        <ListItemText
+                        style={{ color: '#ECF5F9' }}
+                        >
                             Contact
                         </ListItemText>
                     </ListItem>
@@ -70,7 +76,7 @@ export const DrawerComponent = (props) => {
                             <a
                                 href={cv}
                                 download
-                                style={{ textDecoration: 'none' }}
+                                style={{ color: '#ECF5F9' }}
                             >Download Resume</a>
                         </ListItemText>
                     </ListItem>
