@@ -2,11 +2,11 @@ import React from 'react';
 import {
     Typography,
     Grid,
-    Divider,
     Avatar,
     Stack,
     List,
     Box,
+    useMediaQuery,
 } from '@mui/material';
 
 import {
@@ -14,20 +14,13 @@ import {
     me2,
 } from '../images'
 
-import {
-    useState,
-    useEffect,
-} from 'react';
-
 export const AboutMe = () => {
-    const [matches, setMatches] = useState(window.matchMedia('(min-width:1300px)').matches)
-    useEffect(() => {
-        window
-            .matchMedia("(min-width: 1300px)")
-            .addEventListener('change', e => setMatches(e.matches));
-    }, []);
+    const isMobile = useMediaQuery('(min-width:1030px)');
     return (
-        <div id='AboutMe' style={{ height: '85vh' }}>
+        <div 
+        id='AboutMe' 
+        {...(isMobile ? { style: { height: '100vh' } } : { style: { height: 'auto'} })}
+        >
             <List>
             <Grid
                 container spacing={2}
@@ -48,8 +41,6 @@ export const AboutMe = () => {
                 <Grid
                     xs={12}
                 >
-                    {
-                        matches ?
                             <Stack direction="row" justifyContent="center" alignContent="space-evenly">
                                 <Avatar
                                     style={{ justifyContent: 'center' }}
@@ -64,22 +55,6 @@ export const AboutMe = () => {
                                     sx={{ width: 100, height: 100 }}
                                 />
                             </Stack>
-                            :
-                            <Stack direction="row" justifyContent="center" alignContent="space-evenly">
-                                <Avatar
-                                    style={{ justifyContent: 'center' }}
-                                    alt="Lautaro Avellaneda"
-                                    src={me}
-                                    sx={{ width: 100, height: 100 }}
-                                />
-                                <Avatar
-                                    display='inline-block'
-                                    alt="Lautaro Avellaneda"
-                                    src={me2}
-                                    sx={{ width: 100, height: 100 }}
-                                />
-                            </Stack>
-                    }
                     <br />
                     <br />
                     <Box
