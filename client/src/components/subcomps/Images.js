@@ -11,6 +11,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useMediaQuery, Grid } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import {
   Project1,
   Project2,
@@ -20,7 +21,16 @@ import {
   ZephyrCove,
 } from '../../images'
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    "& .css-1f60txc-MuiPaper-root-MuiCard-root": {
+      backgroundColor: '#102932',
+    }
+  }
+}));
+
 export const Images = () => {
+  const classes = useStyles();
   const isMobile = useMediaQuery('(min-width:600px)');
   let isTablet = useMediaQuery('(min-width:1450px)');
 
@@ -30,14 +40,20 @@ export const Images = () => {
     <Grid
       marginLeft={!isTablet ? 10 : isMobile ? 50 : 0}
       marginRight={!isTablet ? 10 : isMobile ? 50 : 0}
+      className={classes.root}
     >
       <ImageList
         cols={isMobile ? 2 : 1}
         gap={20}
         width={isMobile ? 800 : 300}
+        className={classes.root}
       >
         {itemData.map((item) => (
-          <Card sx={{ width: 'auto', height: 'auto' }} style={{borderStyle: 'solid', borderWidth: '3px', borderColor:'#2D4DCD'}}>
+          <Card
+            sx={{ width: 'auto', height: 'auto' }}
+            style={{ borderStyle: 'solid', borderWidth: '3px', borderColor: '#2D4DCD' }}
+            className={classes.root}
+          >
             <CardMedia
               sx={{ height: '250px' }}
               image={item.img}
@@ -45,7 +61,7 @@ export const Images = () => {
               height={'auto'}
             />
             <CardContent
-              style={{ backgroundColor: '#102932' }}
+              style={{ backgroundColor: '#102932', height: 'auto' }}
             >
               <Typography style={{ color: '#ECF5F9' }} gutterBottom variant="h5" component="div">
                 {item.title}
@@ -55,18 +71,18 @@ export const Images = () => {
               </Typography>
             </CardContent>
             <CardActions
-              style={{ backgroundColor: '#102932' }}
+              style={{ backgroundColor: '#102932', height: 'auto' }}
             >
               <Button
                 size="small"
                 onClick={() => window.open(item.href, "_blank")}
-                style={{ color: '#ECF5F9' }}
+                style={{ color: '#ECF5F9', height: 'auto' }}
               >Deployed App</Button>
               {item.ghref ?
                 <Button
                   size="small"
                   onClick={() => window.open(item.ghref)}
-                  style={{ color: '#ECF5F9' }}
+                  style={{ color: '#ECF5F9', height: 'auto' }}
                 >Github Repo</Button>
                 : null}
             </CardActions>
@@ -83,14 +99,14 @@ const itemData = [
     href: `https://chirperapp.herokuapp.com/`,
     ghref: `https://github.com/zelada5574/SocialMediagang`,
     title: 'Chirper Social Media App',
-    author: 'HTML/ Boostrap/ JS/ RESTfulAPIs/ NodeJS/ ExpressJS/ MySQL/ Handlebars',
+    author: 'HTML/ Boostrap/ RESTAPIs/ NodeJS/ MySQL/ Handlebars',
   },
   {
     img: Project1,
     href: `https://samanthajoy13.github.io/so_youre_looking_for_a_hotel/`,
     ghref: `https://github.com/SamanthaJoy13/so_youre_looking_for_a_hotel`,
     title: `So You're Looking For A Hotel`,
-    author: 'HTML/ CSS/ JS/ APIs',
+    author: 'HTML/ CSS/ JS/ Google Maps API/ PriceLine API',
   },
   {
     img: ExpertGuides,
@@ -102,7 +118,7 @@ const itemData = [
     img: ZephyrCove,
     href: `https://zephyrcove.org/`,
     title: 'Zephyr Cove',
-    author: 'Shopify Store, Printify, Ecommerce, AI Generation, Donations to Charities'
+    author: 'Shopify Store, Printify, Ecommerce, AI Generation'
   },
   {
     img: QuizGame,

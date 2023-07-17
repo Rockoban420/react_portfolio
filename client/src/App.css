@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: #102932;
 }
 
 .App-link {
@@ -41,9 +41,6 @@
   background-image: url("https://transparenttextures.com/patterns/black-mamba.png");
 }
 
-.MuiPaper-elevation {
-  background-image: url("https://transparenttextures.com/patterns/black-mamba.png");
-}
 
 @keyframes App-logo-spin {
   from {
