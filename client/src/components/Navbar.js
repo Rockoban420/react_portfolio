@@ -18,7 +18,7 @@ import {
 } from '../images'
 
 export const Navbar = (props) => {
-  const isMobile = useMediaQuery('(min-width:600px)');
+  const isMobile = useMediaQuery('(min-width:777px)');
   return (
     <AppBar 
     style={{ backgroundColor: '#3A95B6' }}

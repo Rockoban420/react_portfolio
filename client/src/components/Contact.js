@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Typography,
     Grid,
-    Divider,
 } from '@mui/material';
 
 import {

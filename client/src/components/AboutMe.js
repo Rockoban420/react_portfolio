@@ -15,11 +15,12 @@ import {
 } from '../images'
 
 export const AboutMe = () => {
-    const isMobile = useMediaQuery('(min-width:1030px)');
+    const isMobile = useMediaQuery('(min-width:777px)');
+    const isTablet = useMediaQuery('(min-width:1450px)');
     return (
         <div 
         id='AboutMe' 
-        {...(isMobile ? { style: { height: '100vh' } } : { style: { height: 'auto'} })}
+        {...(isTablet ? { style: { height: '90vh' } } : isMobile ? { style: { height: '100vh' } } : { style: { height: 'auto'} })}
         >
             <List>
             <Grid
@@ -68,13 +69,12 @@ export const AboutMe = () => {
                         marginLeft={2}
                         style={{color: '#ECF5F9'}}
                     >
-                        Fully Bilingual front-end software engineer born and raised in Buenos Aires, Argentina leveraging background in Technical School. 
-                        <br /><br />Earned a certificate in Full Stack Web Development from the University of Berkley, Coding Boot Camp.
-                        <br /><br />Very passionate in coding with a focus on design and development. Strengths in creativity, teamwork, and building projects from ideation to execution. 
-                        <br /><br />With a very handy base of Bilingual Technical high school in the Philips School (ITPA) in Argentina which trains engineers.
-                        <br /><br />Hobbies include skateboarding, snowboarding, working out, hiking and playing games with my buddies.
-                        <br /><br />I am currently looking to transition from my current job into tech! I am open to any opportunities and would love to connect with you! I am located in the Bay Area, California.
-                        <br /><br />Some of my career interests are QA, Front-End, Back-End, Full-Stack, and Software Engineering, As well as game design, testing and development.
+                        Bilingual Front End Software Developer in the Bay Area. Born and raised in Buenos Aires, Argentina.
+                        <br /><br />I hold a certificate in Full Stack Web Development from the University of Berkley, Coding Boot Camp.
+                        <br /><br />Very passionate about coding with a focus on design and development. My fortes are creative solutions, teamwork, and building projects from ideation to execution.
+                        <br /><br />Hobbies include skateboarding, snowboarding, working out, hiking and gaming.
+                        <br /><br />I am currently open to any opportunities in tech and would love to connect!
+                        <br /><br />Some of my career interests are QA, front-end, back-end, full-stack and software development along with game design, testing and development.
                     </Typography>
                     </Box>
                 </Grid>

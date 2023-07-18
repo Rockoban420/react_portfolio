@@ -9,12 +9,6 @@ import {
 } from "@mui/material";
 
 import {
-    AboutMe,
-    Work,
-    Contact,
-} from '../index'
-
-import {
     cv,
     menuIcon,
     blackMamba,
@@ -27,8 +21,6 @@ export const DrawerComponent = (props) => {
         <div>
         </div>
     )
-    } else {
-        console.log('props.isMobile is false', 'rendering DrawerComponent');
     }
     return (
         <div>

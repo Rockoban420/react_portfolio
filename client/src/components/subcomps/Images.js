@@ -1,9 +1,5 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -26,20 +22,19 @@ const MyRootEl = styled('Card') ({
 });
 
 export const Images = () => {
-  const isMobile = useMediaQuery('(min-width:600px)');
-  let isTablet = useMediaQuery('(min-width:1450px)');
-
-  console.log('mobile', isMobile, 'tablet', isTablet);
+  const isMobile = useMediaQuery('(min-width:777px)');
+  const isTablet = useMediaQuery('(min-width:1450px)');
 
   return (
     <Grid
-      marginLeft={!isTablet ? 10 : isMobile ? 50 : 0}
-      marginRight={!isTablet ? 10 : isMobile ? 50 : 0}
+      // marginLeft={!isTablet ? 10 : isMobile ? 'auto' : 0}
+      // marginRight={!isTablet ? 10 : isMobile ? 'auto' : 0}
+      marginX={isTablet ? 50 : isMobile ? 20 : 10}
+      // width={isTablet ? '75rem' : isMobile ? 'auto' : 'auto'}
     >
       <ImageList
-        cols={isMobile ? 2 : 1}
+        cols={isTablet ? 3 : isMobile ? 2 : 1}
         gap={20}
-        width={isMobile ? 800 : 300}
       >
         {itemData.map((item) => (
           <MyRootEl
@@ -53,7 +48,7 @@ export const Images = () => {
               height={'auto'}
             />
             <CardContent
-              style={{ backgroundColor: '#102932', height: 'auto' }}
+              style={{ backgroundColor: '#102932' }}
             >
               <Typography style={{ color: '#ECF5F9' }} gutterBottom variant="h5" component="div">
                 {item.title}
@@ -63,18 +58,18 @@ export const Images = () => {
               </Typography>
             </CardContent>
             <CardActions
-              style={{ backgroundColor: '#102932', height: 'auto' }}
+              style={{ backgroundColor: '#102932' }}
             >
               <Button
                 size="small"
                 onClick={() => window.open(item.href, "_blank")}
-                style={{ color: '#ECF5F9', height: 'auto' }}
+                style={{ color: '#ECF5F9' }}
               >Deployed App</Button>
               {item.ghref ?
                 <Button
                   size="small"
                   onClick={() => window.open(item.ghref)}
-                  style={{ color: '#ECF5F9', height: 'auto' }}
+                  style={{ color: '#ECF5F9' }}
                 >Github Repo</Button>
                 : null}
             </CardActions>
