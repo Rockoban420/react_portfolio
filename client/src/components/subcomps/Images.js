@@ -15,6 +15,7 @@ import {
   WeatherApp,
   ExpertGuides,
   ZephyrCove,
+  jonesiesjewelry,
 } from '../../images'
 
 const MyRootEl = styled('Card') ({
@@ -82,6 +83,13 @@ export const Images = () => {
 
 const itemData = [
   {
+    img: jonesiesjewelry,
+    href: `https://jonsies-jewlery-19583fefdde0.herokuapp.com/`,
+    ghref: `https://github.com/Rockoban420/jonsiesJewlery`,
+    title: `Jonsie's Jewlery`,
+    author: 'Real World/ React/ MUI/ GraphQL / MongoDB/ Express/ NodeJS',
+  },
+  {
     img: Project2,
     href: `https://chirperapp.herokuapp.com/`,
     ghref: `https://github.com/zelada5574/SocialMediagang`,
@@ -113,13 +121,6 @@ const itemData = [
     ghref: `https://github.com/Rockoban420/timed_quiz_game`,
     title: 'Timed Quiz Game',
     author: 'HTML/ CSS/ JS',
-  },
-  {
-    img: WeatherApp,
-    href: `https://rockoban420.github.io/weather_app/`,
-    ghref: `https://github.com/Rockoban420/weather_app`,
-    title: 'Weather App',
-    author: 'HTML/ CSS/ JS/ APIs',
   },
 
 
