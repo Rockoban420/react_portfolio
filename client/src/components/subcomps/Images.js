@@ -41,7 +41,7 @@ export const Images = () => {
         {itemData.map((item) => (
           <MyRootEl
             sx={{ width: 'auto', height: 'auto' }}
-            style={{ borderStyle: 'solid', borderWidth: '3px', borderColor: '#2D4DCD' }}
+            style={{ borderStyle: 'solid', borderWidth: '3px', borderColor: '#6E8387' }}
           >
             <CardMedia
               sx={{ height: '250px' }}

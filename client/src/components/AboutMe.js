@@ -9,7 +9,7 @@ import {
     useMediaQuery,
 } from '@mui/material';
 
-import ReactTyped from 'react-typed';
+import { Type } from './subcomps/Type';
 
 import {
     me,
@@ -20,8 +20,8 @@ export const AboutMe = () => {
     const isMobile = useMediaQuery('(min-width:777px)');
     const isTablet = useMediaQuery('(min-width:1450px)');
     return (
-        <div 
-        id='AboutMe' 
+        <div
+        id='AboutMe'
         {...(isTablet ? { style: { height: '90vh' } } : isMobile ? { style: { height: '100vh' } } : { style: { height: 'auto'} })}
         >
             <List>
@@ -38,14 +38,8 @@ export const AboutMe = () => {
                     >
                         About Me
                     </Typography> */}
-                    <ReactTyped
-                        strings={[
-                            'About Me',
-                        ]}
-                        typeSpeed={100}
-                        backSpeed={70}
-                        loop
-                        style={{color: '#ECF5F9', fontSize: '2rem', marginBottom: '20px'}}
+                    <Type
+                        text='About Me'
                     />
                 </Grid>
                 <br />
@@ -53,7 +47,7 @@ export const AboutMe = () => {
                 <Grid
                     xs={12}
                 >
-                            <Stack direction="row" justifyContent="center" alignContent="space-evenly">
+                            <Stack direction="row" justifyContent="center" alignContent="space-evenly" style={{marginTop: '20px'}}>
                                 <Avatar
                                     style={{ justifyContent: 'center' }}
                                     alt="Lautaro Avellaneda"

@@ -33,6 +33,13 @@
   color: #820f9f;
 }
 
+.typed-cursor{
+    font-size: 35px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
 
 @keyframes App-logo-spin {
   from {
