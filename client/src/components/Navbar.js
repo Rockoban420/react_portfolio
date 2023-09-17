@@ -20,48 +20,48 @@ import {
 export const Navbar = (props) => {
   const isMobile = useMediaQuery('(min-width:777px)');
   return (
-    <AppBar 
-    style={{ backgroundColor: '#3A95B6' }}
+    <AppBar
+    style={{ backgroundColor: '#C8D3D5' }}
     position="static"
     className='navbar'
     >
       <Toolbar>
-      <DrawerComponent 
+      <DrawerComponent
         isMobile={isMobile}
         setCurrentTab={props.setCurrentTab}
       />
         <IconButton size="large" edge="start" color="inherit" aria-label="logo">
           <img src={logo} style={{ width: '50px', marginLeft: '20px'}} />
         </IconButton>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 0 }}>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 0 }} color='black'>
           Lautaro Avellaneda
         </Typography>
         {isMobile ? (
         <Stack direction="row" spacing={2} marginLeft={10}>
           <Button
-            color="inherit"
+            style={{ color: '#000' }}
             onClick={() => props.setCurrentTab('AboutMe')}
           >
             About Me
           </Button>
           <Button
-            color="inherit"
+            style={{ color: '#000' }}
             onClick={() => props.setCurrentTab('Work')}
           >
             Work
           </Button>
           <Button
-            color="inherit"
+            style={{ color: '#000' }}
             onClick={() => props.setCurrentTab('Contact')}
           >
             Contact
           </Button>
           <Button
           >
-            <a 
-            href={cv} 
+            <a
+            href={cv}
             download
-            style={{ color: '#fff', textDecoration: 'none' }}
+            style={{ color: '#000', textDecoration: 'none' }}
             >Resume</a>
           </Button>
         </Stack>

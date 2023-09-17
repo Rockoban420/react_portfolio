@@ -23,7 +23,7 @@ export const Footer = () => {
     return (
         <BottomNavigation
             style={{
-                backgroundColor: '#3A95B6',
+                backgroundColor: '#C8D3D5',
                 height: '100px',
                 display: 'flex',
                 justifyContent: 'center',
@@ -35,7 +35,7 @@ export const Footer = () => {
             </IconButton>
             <Typography
                 style={{
-                    color: '#fff',
+                    color: '#000',
                 }}
             >
                 © 2023 Lautaro Avellaneda

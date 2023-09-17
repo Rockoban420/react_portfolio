@@ -4,6 +4,8 @@ import {
     Grid,
 } from '@mui/material';
 
+import ReactTyped from 'react-typed';
+
 import {
     useState,
 } from 'react';
@@ -96,11 +98,15 @@ export const Contact = () => {
                 <Grid
                     xs={12}
                 >
-                    <Typography
-                        variant='h2'
-                    >
-                        Contact
-                    </Typography>
+                    <ReactTyped
+                        strings={[
+                            'Contact',
+                        ]}
+                        typeSpeed={100}
+                        backSpeed={70}
+                        loop
+                        style={{color: '#ECF5F9', fontSize: '2rem', marginBottom: '20px'}}
+                    />
                 </Grid>
                 
                 <Grid

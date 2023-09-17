@@ -9,6 +9,8 @@ import {
     useMediaQuery,
 } from '@mui/material';
 
+import ReactTyped from 'react-typed';
+
 import {
     me,
     me2,
@@ -30,12 +32,21 @@ export const AboutMe = () => {
                 <Grid
                     xs={12}
                 >
-                    <Typography
+                    {/* <Typography
                         variant='h2'
                         style={{marginBottom: '20px', color: '#ECF5F9'}}
                     >
                         About Me
-                    </Typography>
+                    </Typography> */}
+                    <ReactTyped
+                        strings={[
+                            'About Me',
+                        ]}
+                        typeSpeed={100}
+                        backSpeed={70}
+                        loop
+                        style={{color: '#ECF5F9', fontSize: '2rem', marginBottom: '20px'}}
+                    />
                 </Grid>
                 <br />
                 <br />

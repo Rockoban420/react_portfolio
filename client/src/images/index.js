@@ -16,3 +16,4 @@ export const githubLight = require('./githubLight.png');
 export const menuIcon = require('./menuIcon.png');
 export const blackMamba = require('./blackMamba.png');
 export const jonesiesjewelry = require('./jonesiesjewelry.png');
+export const patbot = require('./patbot.png');

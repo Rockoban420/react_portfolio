@@ -4,6 +4,9 @@ import {
     Grid,
     Divider,
 } from '@mui/material';
+
+import ReactTyped from 'react-typed';
+
 import { Images } from './subcomps/Images';
 
 
@@ -17,12 +20,15 @@ export const Work = () => {
             <Grid
                 xs={12}   
             >
-                <Typography
-                    variant='h2'
-                    style={{color: '#ECF5F9'}}
-                >
-                    Work
-                </Typography>
+                <ReactTyped
+                        strings={[
+                            'Work',
+                        ]}
+                        typeSpeed={100}
+                        backSpeed={70}
+                        loop
+                        style={{color: '#ECF5F9', fontSize: '2rem', marginBottom: '20px'}}
+                    />
             </Grid>
             <Grid
                 display='flex'

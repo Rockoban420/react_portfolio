@@ -16,6 +16,7 @@ import {
   ExpertGuides,
   ZephyrCove,
   jonesiesjewelry,
+  patbot,
 } from '../../images'
 
 const MyRootEl = styled('Card') ({
@@ -83,6 +84,12 @@ export const Images = () => {
 
 const itemData = [
   {
+    img: patbot,
+    href: `https://patbot.org/`,
+    title: 'PATbot',
+    author: 'Full Stack/ HTML/ CSS/ Python/ Django',
+  },
+  {
     img: jonesiesjewelry,
     href: `https://jonsies-jewlery-19583fefdde0.herokuapp.com/`,
     ghref: `https://github.com/Rockoban420/jonsiesJewlery`,
@@ -102,12 +109,6 @@ const itemData = [
     ghref: `https://github.com/SamanthaJoy13/so_youre_looking_for_a_hotel`,
     title: `So You're Looking For A Hotel`,
     author: 'HTML/ CSS/ JS/ Google Maps API/ PriceLine API',
-  },
-  {
-    img: ExpertGuides,
-    href: `https://experteguides.com/`,
-    title: 'Expert Guides',
-    author: 'Shopify Store, AI Generation, Printify, Ecommerce',
   },
   {
     img: ZephyrCove,

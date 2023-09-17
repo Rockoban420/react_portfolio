@@ -30,15 +30,7 @@
 
 .App-link {
   color: #61dafb;
-  color: #820f9f; 
-} 
-
-.MuiAppBar-root {
-  background-image: url("https://transparenttextures.com/patterns/black-mamba.png");
-}
-
-.MuiBottomNavigation-root {
-  background-image: url("https://transparenttextures.com/patterns/black-mamba.png");
+  color: #820f9f;
 }
 
 
@@ -49,5 +41,4 @@
   to {
     transform: rotate(360deg);
   }
-} 
-
+}
