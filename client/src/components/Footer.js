@@ -23,7 +23,7 @@ export const Footer = () => {
     return (
         <BottomNavigation
             style={{
-                backgroundColor: '#C8D3D5',
+                backgroundImage: 'linear-gradient(to top right, #C8D3D5, #09161b)',
                 height: '100px',
                 display: 'flex',
                 justifyContent: 'center',

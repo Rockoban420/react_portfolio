@@ -185,7 +185,7 @@ export const Contact = () => {
                             <button
                                 type='submit'
                                 style={{
-                                    backgroundColor: '#3A95B6',
+                                    backgroundColor: '#6E8387',
                                     color: '#fff',
                                     borderRadius: '10px',
                                     padding: '10px',

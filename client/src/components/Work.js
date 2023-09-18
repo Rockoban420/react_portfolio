@@ -15,7 +15,8 @@ export const Work = () => {
         <div id='Work'>
             <Grid
                 container spacing={1}
-                marginTop={8}
+                marginTop={4}
+                marginBottom={8}
             >
             <Grid
                 xs={12}

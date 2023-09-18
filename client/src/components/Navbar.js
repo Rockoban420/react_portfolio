@@ -21,7 +21,7 @@ export const Navbar = (props) => {
   const isMobile = useMediaQuery('(min-width:777px)');
   return (
     <AppBar
-    style={{ backgroundColor: '#C8D3D5' }}
+    style={{ backgroundImage: 'linear-gradient(to bottom right, #C8D3D5, #09161b)' }}
     position="static"
     className='navbar'
     >
