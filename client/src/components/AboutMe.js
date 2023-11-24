@@ -75,7 +75,7 @@ export const AboutMe = () => {
                         style={{color: '#ECF5F9'}}
                     >
                         Bilingual Front End Software Developer in the Bay Area. Born and raised in Buenos Aires, Argentina.
-                        <br /><br />I hold a certificate in Full Stack Web Development from the University of Berkley, Coding Boot Camp.
+                        <br /><br />I hold a certificate in Full Stack Web Development from the University of Berkeley, Coding Boot Camp.
                         <br /><br />Very passionate about coding with a focus on design and development. My fortes are creative solutions, teamwork, and building projects from ideation to execution.
                         <br /><br />Hobbies include skateboarding, snowboarding, working out, hiking and gaming.
                         <br /><br />I am currently open to any opportunities in tech and would love to connect!
